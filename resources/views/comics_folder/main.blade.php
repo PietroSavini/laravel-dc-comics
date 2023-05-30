@@ -25,13 +25,13 @@
                     <td>{{ $comic->type }}</td>
                     <td>{{ $comic->price }}</td>
                     <td>
-                        <a href="" class="btn btn-warning">
+                        <a href="{{route('comics_folder.edit' , $comic->id)}}" class="btn btn-warning">
                             <i class="fa-solid fa-pen-to-square"></i>
                         </a>
-                        <a href="" class="btn btn-primary">
+                        <a href="{{route('comics_folder.show' , $comic->id)}}" class="btn btn-primary">
                             <i class="fa-solid fa-circle-info"></i>
                         </a>
-                        <form action="POST" class="d-inline-block">
+                        <form action="" class="d-inline-block">
                             @method('DELETE')
                             @csrf
                             <button class="btn btn-danger ">
