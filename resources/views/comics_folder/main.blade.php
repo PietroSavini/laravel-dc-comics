@@ -31,7 +31,7 @@
                         <a href="{{route('comics_folder.show' , $comic->id)}}" class="btn btn-primary">
                             <i class="fa-solid fa-circle-info"></i>
                         </a>
-                        <form action="" class="d-inline-block">
+                        <form action="{{ route('comics_folder.destroy', $comic->id) }}" method="POST" class="d-inline-block">
                             @method('DELETE')
                             @csrf
                             <button class="btn btn-danger ">
