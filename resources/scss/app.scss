@@ -2,5 +2,20 @@
 
 body{
     background-color: rgb(39, 39, 39);
-    color: #fff;
+    color: #ffffff;
+}
+
+img{
+    max-width: 100%;
+}
+
+.table{
+    color: #ffffff !important;
+    img{
+        max-height: 100px;
+    }
+    .btn{
+        color: black;
+        
+    }
 }
