@@ -3,6 +3,7 @@
 
 @section('content')
     <h2 class="text-center">Tutti i Comics</h2>
+    <a href="{{route('comics_folder.create')}}" class="btn btn-primary my-2">crea nuovo comic</a>
     <table class="table">
         <thead>
             <tr>
